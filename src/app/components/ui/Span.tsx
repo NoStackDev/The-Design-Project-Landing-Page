@@ -1,0 +1,41 @@
+import { mergeClassName } from "@/app/lib/utils";
+import { VariantProps, cva } from "class-variance-authority";
+import React, { HTMLAttributes, forwardRef } from "react";
+
+const spanVariants = cva("", {
+  variants: {
+    size: {
+      default: "text-sm sm:text-lg lg:text-xl font-bold",
+      accented: "text-2xl sm:text-3xl lg:text-4xl font-bold",
+      h1Accented: "text-3xl sm:text-4xl lg:text-5xl font-bold",
+    },
+    fontColor: {
+      default: "text-black-100",
+      accented: "text-primary-400",
+    },
+  },
+  defaultVariants: {
+    size: "default",
+    fontColor: "default",
+  },
+});
+
+interface SpanProps
+  extends HTMLAttributes<HTMLSpanElement>,
+    VariantProps<typeof spanVariants> {}
+
+const Span = forwardRef<HTMLSpanElement, SpanProps>(
+  ({ children, className, size, fontColor, ...props }, ref) => {
+    return (
+      <span
+        ref={ref}
+        {...props}
+        className={mergeClassName(spanVariants({ size, fontColor, className }))}
+      >
+        {children}
+      </span>
+    );
+  }
+);
+
+export default Span;
