@@ -44,6 +44,15 @@ module.exports = {
       borderWidth: {
         1: "1px",
       },
+      keyframes: {
+        slideLeft: {
+          "0%": { "margin-left": "-0%" },
+          "100%": { "margin-left": "-100%" },
+        },
+      },
+      animation: {
+        slideLeft: "slideLeft 300ms ease-in-out forwards",
+      },
     },
   },
   plugins: [],

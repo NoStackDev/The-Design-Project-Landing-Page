@@ -5,6 +5,12 @@ import Image from "next/image";
 import CaseStudy1 from "public/work1.png";
 import CaseStudy2 from "public/work2.png";
 import CaseStudy3 from "public/work3.png";
+import ClientImage from "public/clientImage.png";
+import TestmonialsContainer from "../components/Testimonials/TestmonialsContainer";
+import TestimonialsButton from "../components/Testimonials/TestimonialsButton";
+import TestimonialMessage from "../components/Testimonials/TestimonialMessage";
+import TestimonialContainer from "../components/Testimonials/TestimonialContainer";
+import TestimonialClientInfo from "../components/Testimonials/TestimonialClientInfo";
 
 type Props = {};
 
@@ -91,6 +97,50 @@ const Work = (props: Props) => {
             className="order-1"
           />
         </div>
+      </div>
+
+      <div className="mt-10">
+        <TestmonialsContainer>
+          <TestimonialContainer>
+            <TestimonialMessage>
+              1 TDP helped identify the main pain points and designed a new UX
+              that is accessible and easy to understand. The redesign pushed us
+              forward on our mission to be able to verify 100% of IDs in
+              real-time, and we raised over $100M in funding.
+            </TestimonialMessage>
+            <TestimonialClientInfo
+              clientImage={ClientImage}
+              clientName="ERICK DESOTO"
+              clientTitle="VP of Product at Socure"
+            />
+          </TestimonialContainer>
+          <TestimonialContainer>
+            <TestimonialMessage>
+              2 TDP helped identify the main pain points and designed a new UX
+              that is accessible and easy to understand. The redesign pushed us
+              forward on our mission to be able to verify 100% of IDs in
+              real-time, and we raised over $100M in funding.
+            </TestimonialMessage>
+            <TestimonialClientInfo
+              clientImage={ClientImage}
+              clientName="ERICK DESOTO"
+              clientTitle="VP of Product at Socure"
+            />
+          </TestimonialContainer>
+          <TestimonialContainer>
+            <TestimonialMessage>
+              3 TDP helped identify the main pain points and designed a new UX
+              that is accessible and easy to understand. The redesign pushed us
+              forward on our mission to be able to verify 100% of IDs in
+              real-time, and we raised over $100M in funding.
+            </TestimonialMessage>
+            <TestimonialClientInfo
+              clientImage={ClientImage}
+              clientName="ERICK DESOTO"
+              clientTitle="VP of Product at Socure"
+            />
+          </TestimonialContainer>
+        </TestmonialsContainer>
       </div>
     </section>
   );
