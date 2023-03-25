@@ -6,7 +6,7 @@ type Props = {};
 
 const Blog = (props: Props) => {
   return (
-    <section className="bg-white-200 max-w-screen px-3 py-10">
+    <section className="bg-white-200 px-3 py-10">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-100">
         How To Know If{" "}
         <Span fontColor="accented" size="accented">

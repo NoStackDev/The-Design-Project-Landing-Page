@@ -10,7 +10,7 @@ type Props = {};
 
 const About2 = (props: Props) => {
   return (
-    <section className="px-3 max-w-screen flex flex-col items-center bg-white-200">
+    <section className="px-3 flex flex-col items-center bg-white-200">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200">
         How{" "}
         <Span fontColor="accented" size="accented">

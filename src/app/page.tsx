@@ -26,8 +26,8 @@ export default function Home() {
       <Pricing />
       <Blog />
       <Faq />
-      {/* <Cta /> */}
-      {/* <Footer /> */}
+      <Cta />
+      <Footer />
     </main>
   );
 }

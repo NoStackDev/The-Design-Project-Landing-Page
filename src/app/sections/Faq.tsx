@@ -32,7 +32,7 @@ const Faq = (props: Props) => {
   };
 
   return (
-    <section className="py-10 px-3 bg-white-200 max-w-screen flex flex-col gap-6">
+    <section className="py-10 px-3 bg-white-200 flex flex-col gap-6">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200">
         Our Most{" "}
         <Span fontColor="accented" size="accented">

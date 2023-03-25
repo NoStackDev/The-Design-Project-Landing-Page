@@ -10,7 +10,7 @@ type Props = {};
 
 const Customers = (props: Props) => {
   return (
-    <section className="px-3 py-10 max-w-screen bg-primary-100 flex flex-col items-center">
+    <section className="px-3 py-10 bg-primary-100 flex flex-col items-center">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-white-100 mt-5">
         We helped our customers raise{" "}
         <Span size="accented" fontColor="accented">

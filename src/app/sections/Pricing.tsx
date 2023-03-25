@@ -40,7 +40,7 @@ const Pricing = (props: Props) => {
   const [price, setPrice] = useState("quarter");
 
   return (
-    <section className="py-16 px-3 flex flex-col items-center bg-white-200">
+    <section id="pricing" className="py-16 px-3 flex flex-col items-center bg-white-200">
       <div className="w-full flex justify-center">
         <div className="flex flex-col items-center">
           <Span fontColor="accented" className="text-[12px]">

@@ -10,7 +10,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="max-w-screen bg-white-200 px-3 py-16">
+    <section className="bg-white-200 px-3 py-16">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-100">
         A Diverse Team Of{" "}
         <Span size="accented" fontColor="accented">

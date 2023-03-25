@@ -10,7 +10,7 @@ type Props = {};
 
 const Cta = (props: Props) => {
   return (
-    <section className="w-screen bg-white-200 px-3 pt-10 flex flex-col gap-6 items-center">
+    <section className="bg-white-200 px-3 pt-10 flex flex-col gap-10 items-center">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200 mt-5">
         Let's{" "}
         <Span fontColor="accented" size="accented">
@@ -33,7 +33,7 @@ const Cta = (props: Props) => {
         <Image
           src={HeroIllustration3}
           alt="illustration of a smilling man using a phone"
-          className="h-48 w-auto absolute left-1/2 -translate-x-1/2 -bottom-1 z-3"
+          className="h-56 w-auto absolute left-1/2 -translate-x-1/2 -bottom-1 z-3"
         />
         <Image
           src={HeroIllustration4}

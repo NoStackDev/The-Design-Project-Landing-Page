@@ -16,7 +16,7 @@ type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <section className="px-3 py-16 bg-[#292526] max-w-screen mt-16">
+    <section className="px-3 py-16 bg-[#292526] mt-16">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-white-100">
         How{" "}
         <Span fontColor="accented" size="accented">
