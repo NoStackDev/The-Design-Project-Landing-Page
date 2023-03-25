@@ -13,7 +13,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="h-screen w-screen bg-primary-200 pt-16 flex flex-col items-center px-3">
+    <section className="h-screen max-w-screen bg-primary-200 pt-16 flex flex-col items-center px-3">
       <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-center text-black-200">
         A UI/UX Design Subscription So{" "}
         <Span size="h1Accented" fontColor="accented">

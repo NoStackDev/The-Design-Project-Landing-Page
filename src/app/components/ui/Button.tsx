@@ -54,6 +54,14 @@ const buttonVariants = cva("", {
         "rounded-lg border-white-100",
       ],
     },
+    active: {
+      priceCardDuration: [
+        "bg-black-100",
+        "text-white-100",
+        "!border-black-100",
+      ],
+      inactive: [""],
+    },
   },
   defaultVariants: {
     intent: "primary",
@@ -65,11 +73,13 @@ interface ButtonProps
     VariantProps<typeof buttonVariants> {}
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ children, intent, className, ...props }, ref) => {
+  ({ children, intent, active, className, ...props }, ref) => {
     return (
       <button
         {...props}
-        className={mergeClassName(buttonVariants({ intent, className }))}
+        className={mergeClassName(
+          buttonVariants({ intent, active, className })
+        )}
       >
         {children}
       </button>

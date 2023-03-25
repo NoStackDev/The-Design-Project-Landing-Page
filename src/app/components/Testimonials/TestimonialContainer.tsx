@@ -11,7 +11,7 @@ const TestimonialContainer = forwardRef<
   TestimonialContainerProps
 >(({ children, className, ...props }, ref) => {
   return (
-    <div ref={ref} {...props} className={mergeClassName("min-w-full", className)}>
+    <div ref={ref} {...props} className={mergeClassName("min-w-full flex flex-col items-center gap-8", className)}>
       {children}
     </div>
   );

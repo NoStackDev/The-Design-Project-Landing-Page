@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Span from "../components/ui/Span";
 import Button from "../components/ui/Button";
 import PricingCard from "../components/PricingCard/PricingCard";
@@ -14,7 +16,29 @@ import PriceCardListItem from "../components/PricingCard/PriceCardListItem";
 
 type Props = {};
 
+interface PricesProps extends Record<string, Record<string, number>> {}
+
+const prices: PricesProps = {
+  month: {
+    essential: 2600,
+    pro: 3595,
+    turbo: 5200,
+  },
+  quarter: {
+    essential: 7020,
+    pro: 9706,
+    turbo: 14040,
+  },
+  year: {
+    essential: 26520,
+    pro: 36670,
+    turbo: 53040,
+  },
+};
+
 const Pricing = (props: Props) => {
+  const [price, setPrice] = useState("quarter");
+
   return (
     <section className="py-16 px-3 flex flex-col items-center bg-white-200">
       <div className="w-full flex justify-center">
@@ -24,7 +48,9 @@ const Pricing = (props: Props) => {
           </Span>
           <Button
             intent="outline-right-unrounded"
+            active={price === "month" ? "priceCardDuration" : "inactive"}
             className="border-primary-400 font-bold"
+            onClick={() => setPrice("month")}
           >
             MONTHLY
           </Button>
@@ -37,6 +63,8 @@ const Pricing = (props: Props) => {
           <Button
             intent="outline-unrounded"
             className="border-primary-400 font-bold"
+            active={price === "quarter" ? "priceCardDuration" : "inactive"}
+            onClick={() => setPrice("quarter")}
           >
             QUARTERLY
           </Button>
@@ -49,6 +77,8 @@ const Pricing = (props: Props) => {
           <Button
             intent="outline-left-unrounded"
             className="border-primary-400 font-bold"
+            active={price === "year" ? "priceCardDuration" : "inactive"}
+            onClick={() => setPrice("year")}
           >
             YEARLY
           </Button>
@@ -64,8 +94,10 @@ const Pricing = (props: Props) => {
             </PricingCardCaption>
           </PricingCardContainer>
           <PricingCardContainer>
-            <PricingCardPrice>&#x24; 2600</PricingCardPrice>
-            <PricingCardDuration>PER MONTH</PricingCardDuration>
+            <PricingCardPrice>&#x24;{prices[price].essential}</PricingCardPrice>
+            <PricingCardDuration>
+              PER {price.toLocaleUpperCase()}
+            </PricingCardDuration>
           </PricingCardContainer>
           <PricingCardDivider />
           <PricingCardContainer>
@@ -97,8 +129,10 @@ const Pricing = (props: Props) => {
             </PricingCardCaption>
           </PricingCardContainer>
           <PricingCardContainer>
-            <PricingCardPrice>&#x24; 3,595</PricingCardPrice>
-            <PricingCardDuration>PER MONTH</PricingCardDuration>
+            <PricingCardPrice>&#x24;{prices[price].pro}</PricingCardPrice>
+            <PricingCardDuration>
+              PER {price.toLocaleUpperCase()}
+            </PricingCardDuration>
           </PricingCardContainer>
           <PricingCardDivider />
           <PricingCardContainer>
@@ -133,8 +167,10 @@ const Pricing = (props: Props) => {
             </PricingCardCaption>
           </PricingCardContainer>
           <PricingCardContainer>
-            <PricingCardPrice>&#x24; 5,200</PricingCardPrice>
-            <PricingCardDuration>PER MONTH</PricingCardDuration>
+            <PricingCardPrice>&#x24;{prices[price].turbo}</PricingCardPrice>
+            <PricingCardDuration>
+              PER {price.toLocaleUpperCase()}
+            </PricingCardDuration>
           </PricingCardContainer>
           <PricingCardDivider />
           <PricingCardContainer>

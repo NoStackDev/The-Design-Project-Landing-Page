@@ -16,7 +16,7 @@ type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <section className="px-3 py-10 bg-[#292526] w-screen mt-16">
+    <section className="px-3 py-16 bg-[#292526] max-w-screen mt-16">
       <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-white-100">
         How{" "}
         <Span fontColor="accented" size="accented">
@@ -28,8 +28,9 @@ const Work = (props: Props) => {
         </Span>{" "}
         For The Better
       </h2>
-      <div>
-        <div className="bg-[#91CFD2] flex flex-col items-center pb-2 mt-10">
+
+      <div className="flex flex-col items-center gap-16 mt-16">
+        <div className="bg-[#91CFD2] flex flex-col items-center pb-2">
           <div className="bg-[#231F20] px-5 py-10 rounded-sm flex flex-col gap-5 order-2 w-95">
             <Button intent="primary" className="px-5 py-1 font-bold self-start">
               Socure
@@ -52,7 +53,7 @@ const Work = (props: Props) => {
           />
         </div>
 
-        <div className="bg-[#91CFD2] flex flex-col items-center pb-2 mt-10">
+        <div className="bg-[#91CFD2] flex flex-col items-center pb-2">
           <div className="bg-[#231F20] px-5 py-10 rounded-sm flex flex-col gap-5 order-2 w-95">
             <Button intent="primary" className="px-5 py-1 font-bold self-start">
               Socure
@@ -75,7 +76,7 @@ const Work = (props: Props) => {
           />
         </div>
 
-        <div className="bg-[#91CFD2] flex flex-col items-center pb-2 mt-10">
+        <div className="bg-[#91CFD2] flex flex-col items-center pb-2">
           <div className="bg-[#231F20] px-5 py-10 rounded-sm flex flex-col gap-5 order-2 w-95">
             <Button intent="primary" className="px-5 py-1 font-bold self-start">
               Socure
@@ -99,7 +100,7 @@ const Work = (props: Props) => {
         </div>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-16">
         <TestmonialsContainer>
           <TestimonialContainer>
             <TestimonialMessage>

@@ -10,8 +10,8 @@ type Props = {};
 
 const About2 = (props: Props) => {
   return (
-    <section className="px-3 w-screen flex flex-col items-center bg-white-200">
-      <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200 mt-5">
+    <section className="px-3 max-w-screen flex flex-col items-center bg-white-200">
+      <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200">
         How{" "}
         <Span fontColor="accented" size="accented">
           Signing Up
@@ -32,7 +32,7 @@ const About2 = (props: Props) => {
         productivity and success.
       </Paragraph>
 
-      <div className="mt-10">
+      <div className="mt-16 flex flex-col gap-16">
         <div className="flex flex-col">
           <span className="rounded-full p-5 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
             01
@@ -51,7 +51,7 @@ const About2 = (props: Props) => {
           </Paragraph>
         </div>
 
-        <div className="flex flex-col mt-16">
+        <div className="flex flex-col">
           <span className="rounded-full p-5 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
             02
           </span>
@@ -69,7 +69,7 @@ const About2 = (props: Props) => {
           </Paragraph>
         </div>
 
-        <div className="flex flex-col mt-16">
+        <div className="flex flex-col">
           <span className="rounded-full p-5 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
             03
           </span>
