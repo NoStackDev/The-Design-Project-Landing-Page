@@ -22,6 +22,8 @@ const Navbar = (props: Props) => {
         navMenuRef.current.dataset.show === "false" ? "true" : "false";
       blurOverlayRef.current.dataset.show =
         blurOverlayRef.current.dataset.show === "false" ? "true" : "false";
+      document.getElementsByTagName("body")[0].style.overflow =
+        navMenuRef.current.dataset.show === "false" ? "" : "hidden";
     }
   };
 
