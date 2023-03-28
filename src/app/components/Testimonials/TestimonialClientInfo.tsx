@@ -33,10 +33,10 @@ const TestimonialClientInfo = forwardRef<
           className="col-span-1 row-start-1 row-end-3"
           alt="client"
         />
-        <Span className="text-primary-300 col-span-3 row-start-1 row-end-2">
+        <Span className="text-primary-300 col-span-3 row-start-1 row-end-2 text-xl md:text-2xl lg:text-3xl">
           {clientName}
         </Span>
-        <span className="text-white-100  text-sm col-span-3 row-start-2 row-end-3">
+        <span className="text-white-100  text-sm md:text-xl lg:text-2xl col-span-3 row-start-2 row-end-3 ">
           {clientTitle}
         </span>
         {children}

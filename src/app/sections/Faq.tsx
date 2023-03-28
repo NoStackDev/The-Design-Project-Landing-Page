@@ -32,8 +32,8 @@ const Faq = (props: Props) => {
   };
 
   return (
-    <section className="py-10 px-3 bg-white-200 flex flex-col gap-6">
-      <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-200">
+    <section className="py-10 px-3 md:px-6 lg:px-16 bg-white-200 flex flex-col gap-6">
+      <h2 className="font-bold text-2xl md:text-4xl text-center text-black-200">
         Our Most{" "}
         <Span fontColor="accented" size="accented">
           Frequently
@@ -47,7 +47,9 @@ const Faq = (props: Props) => {
           onClick={(e) => openFaq(e)}
         >
           <div className="flex justify-between pr-1">
-            <span>Do I really get unlimited design services?</span>
+            <span className="text-base md:text-2xl font-bold">
+              Do I really get unlimited design services?
+            </span>
             <Image
               className="w-4 h-auto transition-transform duration-[600ms] ease-in-out data-[open=false]:rotate-0 data-[open=true]:rotate-180"
               data-open="false"
@@ -56,7 +58,7 @@ const Faq = (props: Props) => {
             />
           </div>
           <div
-            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-80 transition-[height] ease-in-out duration-[600ms]  overflow-hidden"
+            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-70 transition-[height] ease-in-out duration-[600ms]  overflow-hidden text-base md:text-2xl"
             data-open="false"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
@@ -71,7 +73,9 @@ const Faq = (props: Props) => {
           onClick={(e) => openFaq(e)}
         >
           <div className="flex justify-between pr-1">
-            <span>What is a realistic turnaround time?</span>
+            <span className="text-base md:text-2xl font-bold">
+              What is a realistic turnaround time?
+            </span>
             <Image
               className="w-4 h-auto transition-transform duration-[600ms] ease-in-out data-[open=false]:rotate-0 data-[open=true]:rotate-180"
               data-open="false"
@@ -80,7 +84,7 @@ const Faq = (props: Props) => {
             />
           </div>
           <div
-            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-80 transition-[height] ease-in-out duration-[600ms]  overflow-hidden"
+            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-70 transition-[height] ease-in-out duration-[600ms]  overflow-hidden text-base md:text-2xl"
             data-open="false"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
@@ -95,7 +99,9 @@ const Faq = (props: Props) => {
           onClick={(e) => openFaq(e)}
         >
           <div className="flex justify-between pr-1">
-            <span>I need my designs ASAP—can you help?</span>
+            <span className="text-base md:text-2xl font-bold">
+              I need my designs ASAP—can you help?
+            </span>
             <Image
               className="w-4 h-auto transition-transform duration-[600ms] ease-in-out data-[open=false]:rotate-0 data-[open=true]:rotate-180"
               data-open="false"
@@ -104,7 +110,7 @@ const Faq = (props: Props) => {
             />
           </div>
           <div
-            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-80 transition-[height] ease-in-out duration-[600ms]  overflow-hidden"
+            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-70 transition-[height] ease-in-out duration-[600ms]  overflow-hidden text-base md:text-2xl"
             data-open="false"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
@@ -119,7 +125,9 @@ const Faq = (props: Props) => {
           onClick={(e) => openFaq(e)}
         >
           <div className="flex justify-between pr-1">
-            <span>What types of projects do you work on?</span>
+            <span className="text-base md:text-2xl font-bold">
+              What types of projects do you work on?
+            </span>
             <Image
               className="w-4 h-auto transition-transform duration-[600ms] ease-in-out data-[open=false]:rotate-0 data-[open=true]:rotate-180"
               data-open="false"
@@ -128,7 +136,7 @@ const Faq = (props: Props) => {
             />
           </div>
           <div
-            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-80 transition-[height] ease-in-out duration-[600ms]  overflow-hidden"
+            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-70 transition-[height] ease-in-out duration-[600ms]  overflow-hidden text-base md:text-2xl"
             data-open="false"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
@@ -143,7 +151,9 @@ const Faq = (props: Props) => {
           onClick={(e) => openFaq(e)}
         >
           <div className="flex justify-between pr-1">
-            <span>What if I want to cancel my service?</span>
+            <span className="text-base md:text-2xl font-bold">
+              What if I want to cancel my service?
+            </span>
             <Image
               className="w-4 h-auto transition-transform duration-[600ms] ease-in-out data-[open=false]:rotate-0 data-[open=true]:rotate-180"
               data-open="false"
@@ -152,7 +162,7 @@ const Faq = (props: Props) => {
             />
           </div>
           <div
-            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-80 transition-[height] ease-in-out duration-[600ms]  overflow-hidden"
+            className="p-2 data-[open=false]:h-0 data-[open=false]:opacity-0 data-[open=true]:opacity-70 transition-[height] ease-in-out duration-[600ms]  overflow-hidden text-base md:text-2xl"
             data-open="false"
           >
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus

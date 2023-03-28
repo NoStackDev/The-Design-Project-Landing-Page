@@ -5,8 +5,8 @@ import React, { HTMLAttributes, forwardRef } from "react";
 const pricingCardDurationVariants = cva("font-bold text-center", {
   variants: {
     intent: {
-      default: ["sm:text-lg text-primary-400"],
-      active: ["text-sm sm:text-base text-black-100"],
+      default: ["text-primary-400"],
+      active: ["text-black-100"],
     },
   },
   defaultVariants: {

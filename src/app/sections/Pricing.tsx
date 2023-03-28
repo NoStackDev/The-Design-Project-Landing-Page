@@ -40,16 +40,19 @@ const Pricing = (props: Props) => {
   const [price, setPrice] = useState("quarter");
 
   return (
-    <section id="pricing" className="py-16 px-3 flex flex-col items-center bg-white-200">
+    <section
+      id="pricing"
+      className="py-16 px-3 md:px-6 flex flex-col items-center bg-white-200"
+    >
       <div className="w-full flex justify-center">
         <div className="flex flex-col items-center">
-          <Span fontColor="accented" className="text-[12px]">
+          <Span fontColor="accented">
             SAVE 5%
           </Span>
           <Button
             intent="outline-right-unrounded"
             active={price === "month" ? "priceCardDuration" : "inactive"}
-            className="border-primary-400 font-bold"
+            className="border-primary-400 font-bold px-4 md:text-2xl"
             onClick={() => setPrice("month")}
           >
             MONTHLY
@@ -57,12 +60,12 @@ const Pricing = (props: Props) => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Span fontColor="accented" className="text-[12px]">
+          <Span fontColor="accented">
             SAVE 10%
           </Span>
           <Button
             intent="outline-unrounded"
-            className="border-primary-400 font-bold"
+            className="border-primary-400 font-bold px-4 md:text-2xl"
             active={price === "quarter" ? "priceCardDuration" : "inactive"}
             onClick={() => setPrice("quarter")}
           >
@@ -71,12 +74,12 @@ const Pricing = (props: Props) => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Span fontColor="accented" className="text-[12px]">
+          <Span fontColor="accented">
             SAVE 15%
           </Span>
           <Button
             intent="outline-left-unrounded"
-            className="border-primary-400 font-bold"
+            className="border-primary-400 font-bold px-4 md:text-2xl"
             active={price === "year" ? "priceCardDuration" : "inactive"}
             onClick={() => setPrice("year")}
           >
@@ -85,7 +88,7 @@ const Pricing = (props: Props) => {
         </div>
       </div>
 
-      <div className="mt-10 flex flex-col gap-10">
+      <div className="mt-10 flex flex-col gap-10 lg:flex-row">
         <PricingCard>
           <PricingCardContainer>
             <PricingCardHeader>Essential</PricingCardHeader>
@@ -202,9 +205,12 @@ const Pricing = (props: Props) => {
 
       <div className="flex flex-col gap-6 items-center mt-16">
         <div className="bg-black-100 w-10/12 h-0.5"></div>
-        <h3 className="font-bold">
+        <h3 className="font-bold text-lg md:text-xl text-center">
           Hey! Need a custom plan?{" "}
-          <Span fontColor="accented" className="text-base font-bold">
+          <Span
+            fontColor="accented"
+            className="text-base font-bold"
+          >
             Contact us!
           </Span>
         </h3>
@@ -212,7 +218,7 @@ const Pricing = (props: Props) => {
           Try us risk free for 7 days, if you don’t love us, get your money
           back.
         </span>
-        <Button className="font-bold py-3 px-10">GET STARTED</Button>
+        <Button className="font-bold py-3 px-10 text-2xl md:text-3xl lg:text-4xl">GET STARTED</Button>
       </div>
     </section>
   );

@@ -5,8 +5,23 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/app/components/**/*.{js,ts,jsx,tsx}",
     "./src/app/components/app/**/*.{js,ts,jsx,tsx}",
+    "./src/app/sections/**/8.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontSize: {
+      'xs': '0.75rem',
+      "sm": '0.875rem',
+      "base": '1rem',
+      "lg": '1.125rem',
+      "xl": '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': ['3rem','4rem'],
+      '6xl': '3.75rem',
+      '7xl': '4.5rem',
+      
+    },
     colors: {
       "white-100": "#FFFFFF",
       "white-200": "#F6F6F6",
@@ -36,7 +51,7 @@ module.exports = {
         9: "9",
       },
       gridTemplateColumns: {
-        customTempCols: "repeat(auto-fill, minmax(10rem, 1fr))",
+        customTempCols: "repeat(auto-fit, minmax(0%, 1fr))",
       },
       width: {
         95: "95%",

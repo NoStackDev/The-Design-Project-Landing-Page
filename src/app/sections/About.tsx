@@ -10,8 +10,8 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section className="bg-white-200 px-3 py-16">
-      <h2 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-center text-black-100">
+    <section className="bg-white-200 px-3 md:px-6 py-16">
+      <h2 className="font-bold text-2xl md:text-4xl text-center text-black-100">
         A Diverse Team Of{" "}
         <Span size="accented" fontColor="accented">
           Passionate
@@ -31,40 +31,45 @@ const About = (props: Props) => {
         productivity and success.
       </Paragraph>
 
-      <div className="flex flex-col gap-14 mt-16">
-        <div className="flex">
+      <div className="flex flex-col lg:flex-row gap-14 md:gap-16 lg:justify-between mt-16">
+        <div className="flex lg:flex-col lg:items-center gap-5 lg:basis-1 lg:grow">
           <Image
             src={PlanImage}
             alt="a slight curved arrow bisecting an x and o"
+            className="h-[8.125rem] w-auto"
           />
           <div className="flex flex-col justify-center">
-            <h3 className="text-center font-bold">Costs 70% less</h3>
+            <h3 className="text-center font-bold text-lg">Costs 70% less</h3>
             <Paragraph>
               We developed highly-optimized design processes to let us work fast
               and deliver incredible results—and we pass those savings on to you
             </Paragraph>
           </div>
         </div>
-        <div className="flex flex-row-reverse">
+        <div className="flex flex-row-reverse lg:flex-col lg:items-center gap-5 lg:basis-1 lg:grow">
           <Image
             src={SquareImage}
             alt="a slight curved arrow bisecting an x and o"
           />
           <div className="flex flex-col justify-center">
-            <h3 className="text-center font-bold">Adaptable and scalable</h3>
+            <h3 className="text-center font-bold text-lg">
+              Adaptable and scalable
+            </h3>
             <Paragraph>
               High-velocity is crucial to a startup’s success, and that’s why
               TDP delivers new designs every week so your momentum never falters
             </Paragraph>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex lg:flex-col lg:items-center gap-5 lg:basis-1 lg:grow">
           <Image
             src={CycleImage}
             alt="a slight curved arrow bisecting an x and o"
           />
           <div className="flex flex-col justify-center">
-            <h3 className="text-center font-bold">Fast turnaround times</h3>
+            <h3 className="text-center font-bold text-lg">
+              Fast turnaround times
+            </h3>
             <Paragraph>
               TDP was built for flexibility—we quickly adapt and grow as you
               grow

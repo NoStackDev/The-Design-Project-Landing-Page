@@ -5,6 +5,7 @@ import React, { useRef } from "react";
 import Logo from "public/logo.svg";
 import MenuIcon from "public/menu.svg";
 import CloseMenuIcon from "public/closeMenuIcon.svg";
+import Button from "./ui/Button";
 
 type Props = {};
 
@@ -29,23 +30,60 @@ const Navbar = (props: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-10 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent flex justify-between items-center">
+      <nav className="fixed top-0 z-10 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-primary-400/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent flex justify-between items-center px-3 md:px-6 lg:px-10">
         {/* logo */}
-        <Image src={Logo} alt="logo" />
+        <Image src={Logo} alt="logo" className="md:w-28 md:h-auto lg:w-14" />
+
+        {/* links */}
+        <ul className="hidden lg:flex gap-10 font-bold">
+          <li>
+            <a href="#" className=" text-black-200">
+              HOW IT WORKS
+            </a>
+          </li>
+          <li>
+            <a href="#" className=" text-black-200">
+              ABOUT
+            </a>
+          </li>
+          <li>
+            <a href="#" className=" text-black-200">
+              WORK
+            </a>
+          </li>
+          <li>
+            <a href="#pricing" className=" text-black-200">
+              PRICING
+            </a>
+          </li>
+          <li>
+            <a href="#" className=" text-black-200">
+              BLOG
+            </a>
+          </li>
+        </ul>
+
+        <Button className="font-bold py-2 px-5 hidden lg:block">
+          GET STARTED
+        </Button>
 
         {/* menu icon  */}
         <button
           onClick={() => onOpenCloseClick()}
           ref={openMenuRef}
-          className="data-[show=true]:hidden"
+          className="data-[show=true]:hidden lg:!hidden"
           data-show="false"
         >
-          <Image src={MenuIcon} alt="menu" className="h-8 w-auto" />
+          <Image
+            src={MenuIcon}
+            alt="menu"
+            className="h-8 w-auto md:h-16 md:w-auto"
+          />
         </button>
       </nav>
 
       <div
-        className="fixed h-screen w-screen bg-primary-100/50 backdrop-blur-sm z-20 data-[show=false]:hidden"
+        className="fixed h-screen w-screen bg-primary-100/50 backdrop-blur-sm z-20 data-[show=false]:hidden overflow-hidden lg:!hidden"
         ref={blurOverlayRef}
         data-show="false"
         onClick={() => onOpenCloseClick()}
@@ -53,7 +91,7 @@ const Navbar = (props: Props) => {
 
       {/* nav */}
       <div
-        className="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 text-base font-semibold text-slate-900 bg-primary-100 flex flex-col gap-3 z-40 data-[show=false]:hidden"
+        className="fixed top-4 right-4 w-full max-w-xs bg-white rounded-lg shadow-lg p-6 md:p-10 text-base font-semibold text-slate-900 bg-primary-100 flex flex-col gap-3  md:gap-6 z-40 data-[show=false]:hidden lg:!hidden"
         data-show="false"
         ref={navMenuRef}
       >
@@ -63,15 +101,19 @@ const Navbar = (props: Props) => {
           onClick={() => onOpenCloseClick()}
           ref={closeMenuRef}
         >
-          <Image src={CloseMenuIcon} alt="close menu" className="w-4 h-4" />
+          <Image
+            src={CloseMenuIcon}
+            alt="close menu"
+            className="w-4 h-4 md:h-8 md:w-8"
+          />
         </button>
 
         {/* links */}
-        <ul className="flex flex-col gap-8 text-black-100 font-bold">
+        <ul className="flex flex-col gap-8 md:gap-16 text-black-100 font-bold">
           <li>
             <a
               href="#"
-              className=" text-white-100"
+              className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               HOW IT WORKS
@@ -80,7 +122,7 @@ const Navbar = (props: Props) => {
           <li>
             <a
               href="#"
-              className=" text-white-100"
+              className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               ABOUT
@@ -89,7 +131,7 @@ const Navbar = (props: Props) => {
           <li>
             <a
               href="#"
-              className=" text-white-100"
+              className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               WORK
@@ -98,7 +140,7 @@ const Navbar = (props: Props) => {
           <li>
             <a
               href="#pricing"
-              className=" text-white-100"
+              className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               PRICING
@@ -107,11 +149,14 @@ const Navbar = (props: Props) => {
           <li>
             <a
               href="#"
-              className=" text-white-100"
+              className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               BLOG
             </a>
+          </li>
+          <li>
+            <Button className="font-bold py-2 px-5">GET STARTED</Button>
           </li>
         </ul>
       </div>

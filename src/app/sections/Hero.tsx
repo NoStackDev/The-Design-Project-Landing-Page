@@ -13,8 +13,8 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="h-screen bg-primary-200 pt-16 flex flex-col items-center px-3">
-      <h1 className="font-bold text-3xl sm:text-4xl lg:text-5xl text-center text-black-200">
+    <section className="bg-primary-200 pt-16 md:pt-36 lg:pt-[5rem] flex flex-col items-center px-3 md:px-6">
+      <h1 className="font-bold text-3xl md:text-5xl lg:w-[62.3125rem] text-center text-black-200">
         A UI/UX Design Subscription So{" "}
         <Span size="h1Accented" fontColor="accented">
           Good
@@ -26,40 +26,72 @@ const Hero = (props: Props) => {
         Label
       </h1>
 
-      <div className="mt-6">
-        <div className="flex items-center gap-3">
-          <Image src={CheckMarkIcon} className="h-4 w-4" alt="check mark" />
-          <Span>No hiring headaches</Span>
+      <div className="mt-6 md:mt-8 lg:mt-7 flex flex-col lg:flex-row items-start gap-3 md:gap-6 lg:gap-10">
+        <div className="flex items-left gap-3 md:gap-6 lg:gap-2 items-center">
+          <Image
+            src={CheckMarkIcon}
+            className="h-4 w-4 md:h-8 md:w-8 lg:w-6"
+            alt="check mark"
+          />
+          <Span className="md:text-2xl lg:text-base">No hiring headaches</Span>
         </div>
-        <div className="flex items-center gap-3">
-          <Image src={CheckMarkIcon} className="h-4 w-4" alt="check mark" />
-          <Span>Weekly turnaround times</Span>
+        <div className="flex items-left gap-3 md:gap-6 lg:gap-2 items-center">
+          <Image
+            src={CheckMarkIcon}
+            className="h-4 w-4 md:h-8 md:w-8 lg:w-6"
+            alt="check mark"
+          />
+          <Span className="md:text-2xl lg:text-base">
+            Weekly turnaround times
+          </Span>
         </div>
-        <div className="flex items-center gap-3">
-          <Image src={CheckMarkIcon} className="h-4 w-4" alt="check mark" />
-          <Span>One flat monthly rate</Span>
+        <div className="flex items-left gap-3 md:gap-6 lg:gap-2 items-center">
+          <Image
+            src={CheckMarkIcon}
+            className="h-4 w-4 md:h-8 md:w-8 lg:w-6"
+            alt="check mark"
+          />
+          <Span className="md:text-2xl lg:text-base">
+            One flat monthly rate
+          </Span>
         </div>
       </div>
 
-      <Button className="mt-6" intent="linear">
-        start your risk free trial
+      <Button
+        className="mt-7 md:mt-8 p-3 lg:mt-6 text-base md:text-3xl lg:text-base z-6 font-bold"
+        intent="linear"
+      >
+        START YOUR RISK FREE TRIAL
       </Button>
 
-      <div className="mt-1 relative w-full h-full">
+      <div className="mt-2 md:mt-8 relative w-full h-60 md:h-[21.5rem] lg:h-[24rem]">
+        <Image
+          src={HeroIllustration1}
+          alt="illustration of a smiling lady holding a mug"
+          className="hidden md:block h-52 lg:h-[15.125rem] w-auto absolute left-[50%]
+          -translate-x-[247%] -bottom-0 z-1"
+        />
         <Image
           src={HeroIllustration2}
           alt="illustration of a smilling lady using a laptop"
-          className="h-56 w-auto absolute left-0 -bottom-1 z-4"
+          className="h-48 md:h-72 lg:h-[20.8125rem] w-auto absolute left-[50%] -translate-x-[98%] -bottom-1 z-5"
         />
         <Image
           src={HeroIllustration3}
           alt="illustration of a smilling man using a phone"
-          className="h-72 w-auto absolute left-1/4 -bottom-1 z-3"
+          className="h-64 md:h-96 lg:h-[26.875rem] w-auto absolute left-[50%] -translate-x-[50%] -bottom-1 z-4"
         />
         <Image
           src={HeroIllustration4}
           alt="illustration of a smiling lady holding a mug"
-          className="h-52 w-auto absolute right-0 -bottom-0 z-2"
+          className="h-44 md:h-64 lg:h-[18.125rem] w-auto absolute right-[50%]
+          translate-x-[130%] -bottom-0 z-3"
+        />
+        <Image
+          src={HeroIllustration5}
+          alt="illustration of a smiling lady holding a mug"
+          className="hidden md:block h-48 lg:h-[13.75rem] w-auto absolute right-[50%]
+          translate-x-[250%] -bottom-0 z-2"
         />
       </div>
     </section>

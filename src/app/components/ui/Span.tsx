@@ -5,9 +5,9 @@ import React, { HTMLAttributes, forwardRef } from "react";
 const spanVariants = cva("", {
   variants: {
     size: {
-      default: "text-sm sm:text-lg lg:text-xl font-bold",
-      accented: "text-2xl sm:text-3xl lg:text-4xl font-bold",
-      h1Accented: "text-3xl sm:text-4xl lg:text-5xl font-bold",
+      default: "text-sm md:text-lg font-bold",
+      accented: "text-2xl md:text-4xl font-bold",
+      h1Accented: "text-3xl md:text-5xl font-bold",
     },
     fontColor: {
       default: "text-black-100",

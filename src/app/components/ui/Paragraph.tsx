@@ -5,8 +5,8 @@ import React, { HTMLAttributes, forwardRef } from "react";
 const paragraphVariants = cva("", {
   variants: {
     intent: {
-      generic: ["text-sm sm:text-base text-left sm:text-center"],
-      heading: ["text-sm sm:text-base text-center"],
+      generic: ["text-base text-left md:text-center"],
+      heading: ["text-base text-center"],
     },
   },
   defaultVariants: {

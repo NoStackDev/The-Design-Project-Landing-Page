@@ -3,11 +3,11 @@ import React, { HTMLAttributes, forwardRef } from "react";
 import { mergeClassName } from "../../lib/utils";
 
 const pricingCardVariants = cva(
-  "border-2 rounded-lg flex flex-col items-center py-10 px-10 border-primary-400 flex flex-col gap-12",
+  "border-2 rounded-lg flex flex-col justify-between items-center py-10 px-10 border-primary-400 flex flex-col gap-12 cursor-pointer",
   {
     variants: {
       intent: {
-        default: ["bg-transparent"],
+        default: ["bg-transparent hover:bg-primary-400"],
         active: ["bg-primary-400"],
       },
     },

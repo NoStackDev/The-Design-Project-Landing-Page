@@ -11,7 +11,7 @@ interface TestimonialMessageProps extends HTMLAttributes<HTMLDivElement> {
 const TestimonialMessage = forwardRef<HTMLDivElement, TestimonialMessageProps>(
   ({ children, className, ...props }, ref) => {
     return (
-      <div>
+      <div className="text-center">
         <Image
           src={Quote}
           alt="doulbe qoutaion"
@@ -21,7 +21,7 @@ const TestimonialMessage = forwardRef<HTMLDivElement, TestimonialMessageProps>(
           {...props}
           ref={ref}
           className={mergeClassName(
-            "inline font-bold text-xl text-center text-white-100",
+            "inline font-bold md:text-4xl text-white-100",
             className
           )}
         >

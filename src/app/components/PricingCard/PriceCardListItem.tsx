@@ -2,7 +2,7 @@ import { mergeClassName } from "@/app/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, forwardRef } from "react";
 
-const pricingCardListItemVariants = cva("text-sm sm:text-base text-left", {
+const pricingCardListItemVariants = cva("text-sm text-left", {
   variants: {
     intent: {
       default: ["text-black-100"],
