@@ -10,7 +10,7 @@ type Props = {};
 
 const Cta = (props: Props) => {
   return (
-    <section className="bg-white-200 px-3 md:px-6 lg:px-24 pt-0 flex flex-col gap-6 items-center">
+    <section id="cta" className="bg-white-200 px-3 md:px-6 lg:px-24 pt-0 flex flex-col gap-6 items-center">
       <h2 className="font-bold text-2xl md:text-4xl text-center text-black-200 mt-5">
         Let's{" "}
         <Span fontColor="accented" size="accented">

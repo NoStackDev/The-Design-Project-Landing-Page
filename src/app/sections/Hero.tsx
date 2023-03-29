@@ -13,7 +13,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="bg-primary-200 pt-16 md:pt-36 lg:pt-[5rem] flex flex-col items-center px-3 md:px-6">
+    <section id="#hero" className="bg-primary-200 pt-16 md:pt-36 lg:pt-[5rem] flex flex-col items-center px-3 md:px-6">
       <h1 className="font-bold text-3xl md:text-5xl lg:w-[62.3125rem] text-center text-black-200">
         A UI/UX Design Subscription So{" "}
         <Span size="h1Accented" fontColor="accented">

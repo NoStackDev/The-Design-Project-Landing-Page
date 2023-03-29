@@ -3,7 +3,7 @@ import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, forwardRef } from "react";
 
 const pricingCardPriceVariant = cva(
-  "font-bold text-5xl text-center",
+  "font-bold text-5xl text-center group-hover:text-black-100",
   {
     variants: {
       intent: {

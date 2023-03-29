@@ -13,7 +13,7 @@ type Props = {};
 
 const Work = (props: Props) => {
   return (
-    <section className="px-3 md:px-6 lg:px-20 py-16 bg-[#292526]">
+    <section id="work" className="px-3 md:px-6 lg:px-20 py-16 bg-[#292526]">
       <h2 className="font-bold text-2xl md:text-4xl text-center text-white-100">
         How{" "}
         <Span fontColor="accented" size="accented">

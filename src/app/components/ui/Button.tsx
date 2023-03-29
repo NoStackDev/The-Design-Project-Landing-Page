@@ -25,11 +25,7 @@ const buttonVariants = cva("", {
         "w-full",
         "rounded-r-lg",
       ],
-      "outline-unrounded": [
-        "bg-transparent",
-        "border-1",
-        "w-full",
-      ],
+      "outline-unrounded": ["bg-transparent", "border-1", "w-full"],
       "price-card": [
         "bg-transparent",
         "border-1",
@@ -38,6 +34,7 @@ const buttonVariants = cva("", {
         "font-bold",
         "rounded-lg text-primary-400 border-primary-400",
         "text-base md:text-2xl lg:text-3xl",
+        "group-hover:text-white-100 group-hover:border-white-100",
       ],
       "price-card-active": [
         "bg-primary-400",

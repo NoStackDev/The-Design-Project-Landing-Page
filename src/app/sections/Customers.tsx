@@ -10,7 +10,7 @@ type Props = {};
 
 const Customers = (props: Props) => {
   return (
-    <section className="px-3 md:px-6 py-5 md:py-10 bg-primary-100 flex flex-col items-center">
+    <section id="customers" className="px-3 md:px-6 py-5 md:py-10 bg-primary-100 flex flex-col items-center">
       <h2 className="font-bold text-2xl md:text-4xl text-center text-white-100 mt-5">
         We helped our customers raise{" "}
         <Span size="accented" fontColor="accented">
@@ -18,24 +18,26 @@ const Customers = (props: Props) => {
         </Span>
       </h2>
 
-      <div className="grid grid-cols-customTempCols justify-items-center place-items-center w-full mt-3">
+      <div className="flex  w-full mt-3">
         <Image
           src={YCombinatorLogo}
           alt="Y Combinator logo"
+          className="px-0 w-[25%] h-auto"
         />
         <Image
           src={SequioiaLogo}
           alt="Sequioia logo"
-          className="border-x-1 border-primary-300"
+          className="border-x-1 border-primary-300 px-0 w-[25%] h-auto"
         />
         <Image
           src={AccelLogo}
           alt="Accel logo"
-          className="border-r-1 border-primary-300"
+          className="border-r-1 border-primary-300 px-0 w-[25%] h-auto"
         />
         <Image
           src={A16zLogo}
           alt="A16z logo"
+          className="px-0 w-[25%] h-auto"
         />
       </div>
     </section>

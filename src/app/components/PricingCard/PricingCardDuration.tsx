@@ -2,7 +2,7 @@ import { mergeClassName } from "@/app/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, forwardRef } from "react";
 
-const pricingCardDurationVariants = cva("font-bold text-center", {
+const pricingCardDurationVariants = cva("font-bold text-center group-hover:text-black-100", {
   variants: {
     intent: {
       default: ["text-primary-400"],

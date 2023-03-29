@@ -37,17 +37,17 @@ const Navbar = (props: Props) => {
         {/* links */}
         <ul className="hidden lg:flex gap-10 font-bold">
           <li>
-            <a href="#" className=" text-black-200">
+            <a href="#hero" className=" text-black-200">
               HOW IT WORKS
             </a>
           </li>
           <li>
-            <a href="#" className=" text-black-200">
+            <a href="#about" className=" text-black-200">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#" className=" text-black-200">
+            <a href="#work" className=" text-black-200">
               WORK
             </a>
           </li>
@@ -57,8 +57,13 @@ const Navbar = (props: Props) => {
             </a>
           </li>
           <li>
-            <a href="#" className=" text-black-200">
+            <a href="#blog" className=" text-black-200">
               BLOG
+            </a>
+          </li>
+          <li>
+            <a href="#faq" className=" text-black-200">
+              FAQ
             </a>
           </li>
         </ul>
@@ -112,7 +117,7 @@ const Navbar = (props: Props) => {
         <ul className="flex flex-col gap-8 md:gap-16 text-black-100 font-bold">
           <li>
             <a
-              href="#"
+              href="#hero"
               className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
@@ -121,7 +126,7 @@ const Navbar = (props: Props) => {
           </li>
           <li>
             <a
-              href="#"
+              href="#about"
               className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
@@ -130,7 +135,7 @@ const Navbar = (props: Props) => {
           </li>
           <li>
             <a
-              href="#"
+              href="#work"
               className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
@@ -148,11 +153,20 @@ const Navbar = (props: Props) => {
           </li>
           <li>
             <a
-              href="#"
+              href="#blog"
               className=" text-white-100 md:text-3xl"
               onClick={() => onOpenCloseClick()}
             >
               BLOG
+            </a>
+          </li>
+          <li>
+            <a
+              href="#faq"
+              className=" text-white-100 md:text-3xl"
+              onClick={() => onOpenCloseClick()}
+            >
+              FAQ
             </a>
           </li>
           <li>

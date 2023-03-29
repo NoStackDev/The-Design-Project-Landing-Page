@@ -1,6 +1,6 @@
 "use client";
 
-import React, { EventHandler, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import Span from "../components/ui/Span";
 import Image from "next/image";
 import Vector from "public/vector.svg";
@@ -10,16 +10,6 @@ type Props = {};
 const Faq = (props: Props) => {
   const faqsContainerDivs = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    if (faqsContainerDivs.current) {
-      const faqDivs = faqsContainerDivs.current.getElementsByTagName("div");
-      for (let _ = 2; _ < faqDivs.length; _ += 3) {
-        const divHeight = faqDivs[_].scrollHeight;
-        faqDivs[_].classList.add(`data-[open=true]:h-[${divHeight}px]`);
-      }
-    }
-  }, [faqsContainerDivs.current]);
-
   const openFaq = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     const chevronImgEle = e.currentTarget.getElementsByTagName("img");
     chevronImgEle[0].dataset.open =
@@ -27,12 +17,19 @@ const Faq = (props: Props) => {
 
     const children = e.currentTarget.getElementsByTagName("div");
     const answerEle = children[1];
+    answerEle.style.height =
+      answerEle.dataset.open === "false"
+        ? answerEle.scrollHeight.toString() + "px"
+        : "0px";
     answerEle.dataset.open =
       answerEle.dataset.open === "false" ? "true" : "false";
   };
 
   return (
-    <section className="py-10 px-3 md:px-6 lg:px-16 bg-white-200 flex flex-col gap-6">
+    <section
+      id="faq"
+      className="py-10 px-3 md:px-6 lg:px-16 bg-white-200 flex flex-col gap-6"
+    >
       <h2 className="font-bold text-2xl md:text-4xl text-center text-black-200">
         Our Most{" "}
         <Span fontColor="accented" size="accented">

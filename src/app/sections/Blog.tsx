@@ -6,7 +6,7 @@ type Props = {};
 
 const Blog = (props: Props) => {
   return (
-    <section className="bg-white-200 px-3 md:px-6 py-10 lg:px-28">
+    <section id="blog" className="bg-white-200 px-3 md:px-6 py-10 lg:px-28">
       <h2 className="font-bold text-2xl md:text-4xl text-center text-black-100">
         How To Know If{" "}
         <Span fontColor="accented" size="accented">
@@ -19,35 +19,35 @@ const Blog = (props: Props) => {
       </h2>
 
       <div className="flex flex-col gap-6 mt-10 lg:grid lg:grid-cols-2">
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
           <Paragraph className="text-base text-white-100">
             You want a new, innovative, and user-centered UX strategy for an
             existing product
           </Paragraph>
         </div>
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
           <Paragraph className="text-base text-white-100">
             You want to understand where users struggle when using your product
           </Paragraph>
         </div>
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
           <Paragraph className="text-base text-white-100">
             You want to translate complex data into an easy-to-understand
             dashboard
           </Paragraph>
         </div>
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
           <Paragraph className="text-base text-white-100">
             You need additional design resources that synergize with your
             (already) amazing design team
           </Paragraph>
         </div>
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-r-2xl rounded-tl-2xl">
           <Paragraph className="text-base text-white-100">
             You‘re researching how UX can impact you business growth
           </Paragraph>
         </div>
-        <div className="bg-black-100 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
+        <div className="bg-black-100 hover:bg-primary-400 w-full pl-6 pr-6 py-4 rounded-l-2xl rounded-tr-2xl">
           <Paragraph className="text-base text-white-100">
             You want to understand your users and design products that meet
             their needs
