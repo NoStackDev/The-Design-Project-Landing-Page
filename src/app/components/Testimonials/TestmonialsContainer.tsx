@@ -94,4 +94,6 @@ const TestmonialsContainer = forwardRef<
   );
 });
 
+TestmonialsContainer.displayName = "TestmonialsContainer";
+
 export default TestmonialsContainer;

@@ -38,4 +38,6 @@ const TestimonialsButton = forwardRef<
   );
 });
 
+TestimonialsButton.displayName = "TestimonialsButton";
+
 export default TestimonialsButton;

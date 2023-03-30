@@ -34,4 +34,6 @@ const PricingCardContainer = forwardRef<
   );
 });
 
+PricingCardContainer.displayName = "PricingCardContainer";
+
 export default PricingCardContainer;

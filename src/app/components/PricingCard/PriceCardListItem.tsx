@@ -2,17 +2,20 @@ import { mergeClassName } from "@/app/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, forwardRef } from "react";
 
-const pricingCardListItemVariants = cva("text-sm text-left group-hover:text-white-100", {
-  variants: {
-    intent: {
-      default: ["text-black-100"],
-      active: ["text-white-100"],
+const pricingCardListItemVariants = cva(
+  "text-sm text-left group-hover:text-white-100",
+  {
+    variants: {
+      intent: {
+        default: ["text-black-100"],
+        active: ["text-white-100"],
+      },
     },
-  },
-  defaultVariants: {
-    intent: "default",
-  },
-});
+    defaultVariants: {
+      intent: "default",
+    },
+  }
+);
 
 interface PriceCardListItemProps
   extends HTMLAttributes<HTMLLIElement>,
@@ -34,5 +37,6 @@ const PriceCardListItem = forwardRef<HTMLLIElement, PriceCardListItemProps>(
   }
 );
 
+PriceCardListItem.displayName = "PriceCardListItem";
 
-export default PriceCardListItem
+export default PriceCardListItem;

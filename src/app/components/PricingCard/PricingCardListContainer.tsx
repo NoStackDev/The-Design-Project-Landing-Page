@@ -2,16 +2,19 @@ import { mergeClassName } from "@/app/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
 import React, { HTMLAttributes, forwardRef } from "react";
 
-const pricingCardListContainerVariants = cva("w-full flex flex-col gap-3 px-6", {
-  variants: {
-    intent: {
-      default: [""],
+const pricingCardListContainerVariants = cva(
+  "w-full flex flex-col gap-3 px-6",
+  {
+    variants: {
+      intent: {
+        default: [""],
+      },
     },
-  },
-  defaultVariants: {
-    intent: "default",
-  },
-});
+    defaultVariants: {
+      intent: "default",
+    },
+  }
+);
 
 interface PricingCardContainerProps
   extends HTMLAttributes<HTMLOListElement>,
@@ -33,5 +36,7 @@ const PricingCardListContainer = forwardRef<
     </ol>
   );
 });
+
+PricingCardListContainer.displayName = "PricingCardListContainer";
 
 export default PricingCardListContainer;

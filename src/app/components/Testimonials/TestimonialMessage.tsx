@@ -37,4 +37,6 @@ const TestimonialMessage = forwardRef<HTMLDivElement, TestimonialMessageProps>(
   }
 );
 
+TestimonialMessage.displayName = "TestimonialMessage";
+
 export default TestimonialMessage;

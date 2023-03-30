@@ -38,4 +38,6 @@ const Span = forwardRef<HTMLSpanElement, SpanProps>(
   }
 );
 
+Span.displayName = "Span";
+
 export default Span;

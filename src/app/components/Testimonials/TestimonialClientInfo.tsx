@@ -45,4 +45,6 @@ const TestimonialClientInfo = forwardRef<
   }
 );
 
+TestimonialClientInfo.displayName = "TestimonialClientInfo";
+
 export default TestimonialClientInfo;

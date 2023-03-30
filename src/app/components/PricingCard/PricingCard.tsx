@@ -35,4 +35,6 @@ const PricingCard = forwardRef<HTMLDivElement, PricingCardProps>(
   }
 );
 
+PricingCard.displayName = "PricingCard";
+
 export default PricingCard;
