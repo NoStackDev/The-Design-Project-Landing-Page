@@ -1,4 +1,3 @@
-import { Montserrat } from "next/font/google";
 import Hero from "@/sections/Hero";
 import Navbar from "./components/Navbar";
 import Customers from "./sections/Customers";
@@ -11,7 +10,6 @@ import Faq from "./sections/Faq";
 import Cta from "./sections/Cta";
 import Footer from "./sections/Footer";
 
-const inter = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
