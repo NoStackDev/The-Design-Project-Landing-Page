@@ -55,7 +55,7 @@ const About2 = (props: Props) => {
         transition={{ duration: 0.5 }}
         className="mt-16 flex flex-col lg:flex-row gap-16"
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col md:justify-between">
           <span className="rounded-full text-3xl py-2 px-3 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
             01
           </span>
@@ -73,29 +73,25 @@ const About2 = (props: Props) => {
           </Paragraph>
         </div>
 
-        <div className="flex flex-col md:justify-between ">
-          <div className="md:flex md:flex-col md:justify-between">
-            <span className="rounded-full text-3xl py-2 px-3 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
-              02
-            </span>
-            <h3 className="font-bold text-primary-300 text-2xl md:text-3xl lg:text-4xl text-center mt-5">
-              Meet your perfect match
-            </h3>
-          </div>
-          <div className="md:flex md:flex-col md:items-center">
-            <Image
-              src={HeroIllustration2}
-              alt="illustration of a smilling man using a phone"
-              className="h-32 md:h-40 w-auto mt-5 md:mt-0"
-            />
-            <Paragraph className="text-center">
-              We match you with the best TDP design expert for your needs. Then
-              we schedule a call to learn about your startup.
-            </Paragraph>
-          </div>
+        <div className="flex flex-col md:justify-between">
+          <span className="rounded-full text-3xl py-2 px-3 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
+            02
+          </span>
+          <h3 className="font-bold text-primary-300 text-2xl md:text-3xl lg:text-4xl text-center mt-5">
+            Meet your perfect match
+          </h3>
+          <Image
+            src={HeroIllustration2}
+            alt="illustration of a smilling man using a phone"
+            className="h-32 md:h-40 w-auto mt-5"
+          />
+          <Paragraph className="text-center">
+            We match you with the best TDP design expert for your needs. Then we
+            schedule a call to learn about your startup.
+          </Paragraph>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col md:justify-between">
           <span className="rounded-full text-3xl py-2 px-3 bg-gradient-to-b from-primary-400 to-[#E83C11] font-bold text-white-200 self-center">
             03
           </span>
