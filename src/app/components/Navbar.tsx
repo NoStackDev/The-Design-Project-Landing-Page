@@ -30,39 +30,39 @@ const Navbar = (props: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-10 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-primary-400/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent flex justify-between items-center px-3 md:px-6 lg:px-10">
+      <nav className="fixed top-0 z-10 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-primary-400/10 bg-white supports-backdrop-blur:bg-white flex justify-between items-center px-3 md:px-6 lg:px-10">
         {/* logo */}
         <Image src={Logo} alt="logo" className="md:w-28 md:h-auto lg:w-14" />
 
         {/* links */}
         <ul className="hidden lg:flex gap-10 font-bold">
           <li>
-            <a href="#hero" className=" text-black-200">
+            <a href="#hero" className=" text-primary-400">
               HOW IT WORKS
             </a>
           </li>
           <li>
-            <a href="#about" className=" text-black-200">
+            <a href="#about" className=" text-primary-400">
               ABOUT
             </a>
           </li>
           <li>
-            <a href="#work" className=" text-black-200">
+            <a href="#work" className=" text-primary-400">
               WORK
             </a>
           </li>
           <li>
-            <a href="#pricing" className=" text-black-200">
+            <a href="#pricing" className=" text-primary-400">
               PRICING
             </a>
           </li>
           <li>
-            <a href="#blog" className=" text-black-200">
+            <a href="#blog" className=" text-primary-400">
               BLOG
             </a>
           </li>
           <li>
-            <a href="#faq" className=" text-black-200">
+            <a href="#faq" className=" text-primary-400">
               FAQ
             </a>
           </li>
@@ -114,7 +114,7 @@ const Navbar = (props: Props) => {
         </button>
 
         {/* links */}
-        <ul className="flex flex-col gap-8 md:gap-16 text-black-100 font-bold">
+        <ul className="flex flex-col gap-8 md:gap-16 font-bold">
           <li>
             <a
               href="#hero"

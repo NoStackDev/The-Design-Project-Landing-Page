@@ -13,6 +13,7 @@ import PricingCardListHeader from "../components/PricingCard/PricingCardListHead
 import PricingCardListContainer from "../components/PricingCard/PricingCardListContainer";
 import PricingCardDuration from "../components/PricingCard/PricingCardDuration";
 import PriceCardListItem from "../components/PricingCard/PriceCardListItem";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -46,9 +47,7 @@ const Pricing = (props: Props) => {
     >
       <div className="w-full flex justify-center">
         <div className="flex flex-col items-center">
-          <Span fontColor="accented">
-            SAVE 5%
-          </Span>
+          <Span fontColor="accented">SAVE 5%</Span>
           <Button
             intent="outline-right-unrounded"
             active={price === "month" ? "priceCardDuration" : "inactive"}
@@ -60,9 +59,7 @@ const Pricing = (props: Props) => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Span fontColor="accented">
-            SAVE 10%
-          </Span>
+          <Span fontColor="accented">SAVE 10%</Span>
           <Button
             intent="outline-unrounded"
             className="border-primary-400 font-bold px-4 md:text-2xl"
@@ -74,9 +71,7 @@ const Pricing = (props: Props) => {
         </div>
 
         <div className="flex flex-col items-center">
-          <Span fontColor="accented">
-            SAVE 15%
-          </Span>
+          <Span fontColor="accented">SAVE 15%</Span>
           <Button
             intent="outline-left-unrounded"
             className="border-primary-400 font-bold px-4 md:text-2xl"
@@ -203,14 +198,17 @@ const Pricing = (props: Props) => {
         </PricingCard>
       </div>
 
-      <div className="flex flex-col gap-6 items-center mt-16">
+      <motion.div
+        initial={{ opacity: 0, y: "20%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col gap-6 items-center mt-16"
+      >
         <div className="bg-black-100 w-10/12 h-0.5"></div>
         <h3 className="font-bold text-lg md:text-xl text-center">
           Hey! Need a custom plan?{" "}
-          <Span
-            fontColor="accented"
-            className="text-base font-bold"
-          >
+          <Span fontColor="accented" className="text-base font-bold">
             Contact us!
           </Span>
         </h3>
@@ -218,8 +216,10 @@ const Pricing = (props: Props) => {
           Try us risk free for 7 days, if you don’t love us, get your money
           back.
         </span>
-        <Button className="font-bold py-3 px-10 text-2xl md:text-3xl lg:text-4xl">GET STARTED</Button>
-      </div>
+        <Button className="font-bold py-3 px-10 text-2xl md:text-3xl lg:text-4xl">
+          GET STARTED
+        </Button>
+      </motion.div>
     </section>
   );
 };

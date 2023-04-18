@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Span from "../components/ui/Span";
 import Paragraph from "../components/ui/Paragraph";
@@ -5,13 +7,20 @@ import Image from "next/image";
 import PlanImage from "public/gameplan.svg";
 import SquareImage from "public/square.svg";
 import CycleImage from "public/cycle.svg";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 const About = (props: Props) => {
   return (
     <section id="about" className="bg-white-200 px-3 md:px-6 py-16">
-      <h2 className="font-bold text-2xl md:text-4xl text-center text-black-100">
+      <motion.h2
+        initial={{ opacity: 0, y: "20%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="font-bold text-2xl md:text-4xl text-center text-black-100"
+      >
         A Diverse Team Of{" "}
         <Span size="accented" fontColor="accented">
           Passionate
@@ -20,18 +29,31 @@ const About = (props: Props) => {
         <Span size="accented" fontColor="accented">
           Startup Succeed
         </Span>
-      </h2>
+      </motion.h2>
 
-      <Paragraph intent="heading" className="mt-5">
-        Take a minute to imagine how you’d feel watching your user count grow,
-        and retention rates stay consistently high. When you prioritize
-        effective UX, better retention and growth are natural consequences.
-        Backed by countless hours of research and testing, TDP blends UX, UI,
-        and Product design into a deliciously smooth process that fuels
-        productivity and success.
-      </Paragraph>
+      <motion.div
+        initial={{ opacity: 0, y: "20%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
+        <Paragraph intent="heading" className="mt-5">
+          Take a minute to imagine how you’d feel watching your user count grow,
+          and retention rates stay consistently high. When you prioritize
+          effective UX, better retention and growth are natural consequences.
+          Backed by countless hours of research and testing, TDP blends UX, UI,
+          and Product design into a deliciously smooth process that fuels
+          productivity and success.
+        </Paragraph>
+      </motion.div>
 
-      <div className="flex flex-col lg:flex-row gap-14 md:gap-16 lg:justify-between mt-16">
+      <motion.div
+        initial={{ opacity: 0, y: "20%" }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col lg:flex-row gap-14 md:gap-16 lg:justify-between mt-16"
+      >
         <div className="flex lg:flex-col lg:items-center gap-5 lg:basis-1 lg:grow">
           <Image
             src={PlanImage}
@@ -76,7 +98,7 @@ const About = (props: Props) => {
             </Paragraph>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
