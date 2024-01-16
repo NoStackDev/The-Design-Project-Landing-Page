@@ -92,9 +92,10 @@ const Hero = (props: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
+        className="relative z-[10]"
       >
         <Button
-          className="mt-7 md:mt-8 p-3 lg:mt-6 text-base md:text-3xl lg:text-base z-6 font-bold"
+          className="relative mt-7 md:mt-8 p-3 lg:mt-6 text-base md:text-3xl lg:text-base font-bold"
           intent="linear"
         >
           START YOUR RISK FREE TRIAL
@@ -106,7 +107,7 @@ const Hero = (props: Props) => {
           initial={{ opacity: 0, x: "-300%" }}
           whileInView={{ opacity: 1, x: "-247%" }}
           viewport={{ once: true }}
-          transition={{ delay: 0.3 , duration: 0.5 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
           className="hidden md:block h-52 lg:h-[15.125rem] w-auto absolute left-[50%]
           -bottom-0 z-1"
         >
@@ -120,7 +121,7 @@ const Hero = (props: Props) => {
           initial={{ opacity: 0, x: "-150%" }}
           whileInView={{ opacity: 1, x: "-98%" }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 , duration: 0.5 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
           className="h-48 md:h-72 lg:h-[20.8125rem] w-auto absolute left-[50%] z-5 -bottom-1"
         >
           <Image
@@ -147,7 +148,7 @@ const Hero = (props: Props) => {
           initial={{ opacity: 0, x: "200%" }}
           whileInView={{ opacity: 1, x: "130%" }}
           viewport={{ once: true }}
-          transition={{ delay: 0.1 , duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
           className="h-44 md:h-64 lg:h-[18.125rem] w-auto absolute right-[50%] -bottom-0 z-3"
         >
           <Image
@@ -161,7 +162,7 @@ const Hero = (props: Props) => {
           initial={{ opacity: 0, x: "300%" }}
           whileInView={{ opacity: 1, x: "250%" }}
           viewport={{ once: true }}
-          transition={{ delay: 0.5  , duration: 0.5}}
+          transition={{ delay: 0.5, duration: 0.5 }}
           className="hidden md:block h-48 lg:h-[13.75rem] w-auto absolute right-[50%] -bottom-0 z-2"
         >
           <Image

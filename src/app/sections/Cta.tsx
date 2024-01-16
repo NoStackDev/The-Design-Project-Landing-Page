@@ -49,8 +49,9 @@ const Cta = (props: Props) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
+        className="relative z-[10]"
       >
-        <Button className="font-bold py-3 px-10 text-2xl md:text-3xl lg:text-4xl z-6">
+        <Button className="font-bold py-3 px-10 text-2xl md:text-3xl lg:text-4xl">
           GET STARTED
         </Button>
       </motion.div>
@@ -74,7 +75,7 @@ const Cta = (props: Props) => {
           initial={{ opacity: 0, x: "-100%" }}
           whileInView={{ opacity: 1, x: "-50%" }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5}}
+          transition={{ duration: 0.5 }}
           className="h-64 md:h-96 w-auto absolute left-[50%] -bottom-1 z-4"
         >
           <Image
