@@ -10,21 +10,22 @@ import Faq from "./sections/Faq";
 import Cta from "./sections/Cta";
 import Footer from "./sections/Footer";
 
-
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen overflow-x-hidden bg-primary-200">
       <Navbar />
-      <Hero />
-      <Customers />
-      <About />
-      <About2 />
-      <Work />
-      <Pricing />
-      <Blog />
-      <Faq />
-      <Cta />
-      <Footer />
+      <div className="max-w-7xl xl:mx-auto">
+        <Hero />
+        <Customers />
+        <About />
+        <About2 />
+        <Work />
+        <Pricing />
+        <Blog />
+        <Faq />
+        <Cta />
+        <Footer />
+      </div>
     </main>
   );
 }

@@ -30,61 +30,63 @@ const Navbar = (props: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-10 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-primary-400/10 bg-white supports-backdrop-blur:bg-white flex justify-between items-center px-3 md:px-6 lg:px-10">
-        {/* logo */}
-        <Image src={Logo} alt="logo" className="md:w-28 md:h-auto lg:w-14" />
+      <nav className="w-screen fixed top-0 z-10 backdrop-blur flex-none transition-colors duration-500 lg:z-40 lg:border-b lg:border-primary-400/10 bg-white supports-backdrop-blur:bg-white">
+        <div className="max-w-7xl h-full flex justify-between items-center px-3 md:px-6 lg:px-10 xl:mx-auto">
+          {/* logo */}
+          <Image src={Logo} alt="logo" className="md:w-28 md:h-auto lg:w-14" />
 
-        {/* links */}
-        <ul className="hidden lg:flex gap-10 font-bold">
-          <li>
-            <a href="#hero" className=" text-primary-400">
-              HOW IT WORKS
-            </a>
-          </li>
-          <li>
-            <a href="#about" className=" text-primary-400">
-              ABOUT
-            </a>
-          </li>
-          <li>
-            <a href="#work" className=" text-primary-400">
-              WORK
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className=" text-primary-400">
-              PRICING
-            </a>
-          </li>
-          <li>
-            <a href="#blog" className=" text-primary-400">
-              BLOG
-            </a>
-          </li>
-          <li>
-            <a href="#faq" className=" text-primary-400">
-              FAQ
-            </a>
-          </li>
-        </ul>
+          {/* links */}
+          <ul className="hidden lg:flex gap-10 font-bold">
+            <li>
+              <a href="#hero" className=" text-primary-400">
+                HOW IT WORKS
+              </a>
+            </li>
+            <li>
+              <a href="#about" className=" text-primary-400">
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a href="#work" className=" text-primary-400">
+                WORK
+              </a>
+            </li>
+            <li>
+              <a href="#pricing" className=" text-primary-400">
+                PRICING
+              </a>
+            </li>
+            <li>
+              <a href="#blog" className=" text-primary-400">
+                BLOG
+              </a>
+            </li>
+            <li>
+              <a href="#faq" className=" text-primary-400">
+                FAQ
+              </a>
+            </li>
+          </ul>
 
-        <Button className="font-bold py-2 px-5 hidden lg:block">
-          GET STARTED
-        </Button>
+          <Button className="font-bold py-2 px-5 hidden lg:block">
+            GET STARTED
+          </Button>
 
-        {/* menu icon  */}
-        <button
-          onClick={() => onOpenCloseClick()}
-          ref={openMenuRef}
-          className="data-[show=true]:hidden lg:!hidden"
-          data-show="false"
-        >
-          <Image
-            src={MenuIcon}
-            alt="menu"
-            className="h-8 w-auto md:h-16 md:w-auto"
-          />
-        </button>
+          {/* menu icon  */}
+          <button
+            onClick={() => onOpenCloseClick()}
+            ref={openMenuRef}
+            className="data-[show=true]:hidden lg:!hidden"
+            data-show="false"
+          >
+            <Image
+              src={MenuIcon}
+              alt="menu"
+              className="h-8 w-auto md:h-16 md:w-auto"
+            />
+          </button>
+        </div>
       </nav>
 
       <div
